@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Megadott adatok:<br>
+        Email: <%= email %> Jelszo: <%= jelszo %>
+    </p>
+    <form method="GET">
+        <p>
+            <label>
+                Email:<br>
+                <input type="text" name="email">
+                <div style="color: red"><%= errors.email %><%= errors.email2 %></div>
+            </label>
+        </p>
+        <p>
+            <label>
+                Jelszo:<br>
+                <input type="text" name="jelszo">
+                <div style="color: red"><%= errors.jelszo %><%= errors.jelszo3 %></div>
+            </label>
+        </p>
+        <p>
+            <label>
+                Jelszo Ismetles:<br>
+                <input type="text" name="jelszo2">
+                <div style="color: red"><%= errors.jelszo2 %><%= errors.jelszo4 %></div>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Elküld">
+        </p>
+    </form>
+</body>
+</html>
